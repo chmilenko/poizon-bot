@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 10px auto;
+  height: 5vh;
+}
+
+.headerRightItems {
+  display: flex;
+  justify-content: space-around;
+  width: 15vh;
+}
