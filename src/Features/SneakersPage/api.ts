@@ -12,7 +12,7 @@ export const initSneakersList = async (): Promise<Sneakers[]> => {
 
 export const addNewSneakers = async (obj: Sneakers): Promise<Sneakers> => {
   try {
-    const addNewSneakers = await fetchData("/sneakers", {
+    const addNewSneakers = await fetchData("/api/sneakers", {
       method: "POST",
       body: JSON.stringify(obj),
     });
@@ -24,7 +24,7 @@ export const addNewSneakers = async (obj: Sneakers): Promise<Sneakers> => {
 
 export const deleteSneakers = async (id: SneakersId): Promise<number> => {
   try {
-    const result = await fetchData(`/sneakers/${id}`, {
+    const result = await fetchData(`/api/sneakers/${id}`, {
       method: "DELETE",
     });
     return result.json();

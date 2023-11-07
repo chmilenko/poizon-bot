@@ -12,7 +12,9 @@ function Header(): JSX.Element {
   return (
     <div>
       <div className="header">
-        <Button onClick={() => navigate("/")}>Иконка</Button>
+        <Button onClick={() => navigate("/")}>
+          <img src="/static/2.png" alt="icon" className="headerIcon" />
+        </Button>
         <div className="headerRightItems">
           {user?.username ? (
             <span>{user?.username}</span>
